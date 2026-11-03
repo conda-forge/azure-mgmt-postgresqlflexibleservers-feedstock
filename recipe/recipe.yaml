@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-postgresqlflexibleservers
-  version: 2.0.0
+  version: 3.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_postgresqlflexibleservers-${{ version }}.tar.gz
-  sha256: 13d2f45ba218a364fb0405684f8070f261ae3ed597d5a54d04e3298732c4cdaa
+  sha256: 53db694253e1077c41927bcae9662e4e7e04f04580ddeebbc37999dbf2f28dd6
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - typing_extensions >=4.6.0
     - azure-mgmt-core >=1.6.0
-    - msrest >=0.7.1
+    - isodate >=0.6.1
 tests:
   - python:
       imports:
